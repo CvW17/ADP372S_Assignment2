@@ -1,20 +1,20 @@
-package za.ac.cput;
+package ac.za.cput;
 
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TDDTest
+class listClassTest
 {
-    TDD tdd = new TDD();
+    listClass list = new listClass();
 
     public boolean ListAdd()
     {
 
-        int Size = tdd.getListSize();
-        tdd.addList("Zero");
+        int Size = list.getListSize();
+        list.addList("Zero");
 
-        if (Size != tdd.getListSize())
+        if (Size != list.getListSize())
             return true;
         else return false;
     }
@@ -27,11 +27,11 @@ class TDDTest
 
     public boolean ListRemove()
     {
-        int Size = tdd.getListSize();
-        tdd.addList("Zero");
+        int Size = list.getListSize();
+        list.addList("Zero");
 
-        tdd.clearList();
-        if (Size == tdd.getListSize())
+        list.clearList();
+        if (Size == list.getListSize())
             return true;
         else return false;
     }

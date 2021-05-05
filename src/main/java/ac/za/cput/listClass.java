@@ -1,8 +1,8 @@
-package za.ac.cput;
+package ac.za.cput;
 
 import java.util.*;
 
-public class TDD
+public class listClass
 {
     private List<String> list=new ArrayList<String>();
 
