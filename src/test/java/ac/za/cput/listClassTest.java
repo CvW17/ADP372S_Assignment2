@@ -8,14 +8,14 @@ class listClassTest
 {
     listClass list = new listClass();
 
-    public boolean ListAdd()
+    public boolean listAdd()
     {
         list.clearList();
 
         int Size = list.getListSize();
         list.addList("Zero");
 
-        if (Size != list.getListSize())
+        if (Size < list.getListSize())
             return true;
         else return false;
     }
@@ -23,10 +23,10 @@ class listClassTest
     @Test
     void testListAdd()
     {
-        assertEquals(true, this.ListAdd());
+        assertEquals(true, this.listAdd());
     }
 
-    public boolean ListRemove()
+    public boolean listRemove()
     {
         list.clearList();
 
@@ -40,9 +40,9 @@ class listClassTest
     }
 
     @Test
-    void TestListRemove()
+    void testListRemove()
     {
-        assertEquals(true, this.ListRemove());
+        assertEquals(true, this.listRemove());
     }
 
     public String listFind()
