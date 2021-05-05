@@ -10,6 +10,7 @@ class listClassTest
 
     public boolean ListAdd()
     {
+        list.clearList();
 
         int Size = list.getListSize();
         list.addList("Zero");
@@ -27,10 +28,12 @@ class listClassTest
 
     public boolean ListRemove()
     {
+        list.clearList();
+
         int Size = list.getListSize();
         list.addList("Zero");
 
-        list.clearList();
+        list.listRemove(0);
         if (Size == list.getListSize())
             return true;
         else return false;
@@ -40,5 +43,22 @@ class listClassTest
     void TestListRemove()
     {
         assertEquals(true, this.ListRemove());
+    }
+
+    public String listFind()
+    {
+        list.clearList();
+
+        list.addList("Zero");
+        list.addList("One");
+        list.addList("Two");
+
+        return list.listFind(1);
+    }
+
+    @Test
+    void testListFind()
+    {
+        assertNotNull(this.listFind());
     }
 }

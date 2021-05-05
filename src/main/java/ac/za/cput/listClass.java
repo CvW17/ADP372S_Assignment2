@@ -8,7 +8,6 @@ public class listClass
 
     public void addList(String add)
     {
-        list.clear();
         list.add(add);
     }
 
@@ -17,8 +16,18 @@ public class listClass
         return list.size();
     }
 
+    public void listRemove(int index)
+    {
+        list.remove(index);
+    }
+
+    public String listFind(int index)
+    {
+        return list.get(index);
+    }
+
     public void clearList()
     {
-        list.remove(0);
+        list.clear();
     }
 }
