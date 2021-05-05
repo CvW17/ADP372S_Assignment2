@@ -1,6 +1,9 @@
+package za.ac.cput;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-class TDDTest {
+class TDDTest
+{
 
     @org.junit.jupiter.api.BeforeEach
     void setUp()
@@ -8,4 +11,9 @@ class TDDTest {
 
     }
 
+    @org.junit.jupiter.api.AfterEach
+    void tearDown()
+    {
+
+    }
 }
