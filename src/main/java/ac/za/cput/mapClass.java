@@ -6,7 +6,7 @@ public class mapClass
 {
     private Map<Integer, String> map=new HashMap<Integer, String>();
 
-    public void mapCLear()
+    public void mapClear()
     {
         map.clear();
     }

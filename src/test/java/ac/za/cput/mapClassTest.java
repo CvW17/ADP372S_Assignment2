@@ -11,7 +11,7 @@ class mapClassTest
     @Test
     void testMapAdd()
     {
-        map.mapCLear();
+        map.mapClear();
 
         map.mapAdd(1, "One");
         map.mapAdd(2, "Two");
@@ -22,7 +22,7 @@ class mapClassTest
     @Test
     void testMapRemove()
     {
-        map.mapCLear();
+        map.mapClear();
 
         map.mapAdd(1, "One");
         map.mapAdd(2, "Two");
@@ -36,7 +36,7 @@ class mapClassTest
     @Test
     void testMapFind()
     {
-        map.mapCLear();
+        map.mapClear();
 
         map.mapAdd(1, "One");
         map.mapAdd(2, "Two");
